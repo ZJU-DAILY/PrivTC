@@ -11,7 +11,7 @@ lambda_{2,1} lambda_{2,2} ... lambda_{2,n}
 lambda_{n,1} lambda_{n,2} ... lambda_{n,n}
 ```
 where `lambda_{i,j} = 1` if there exits an edge from vertex `v_{i}` to `v_{j}`, and otherwise, `lambda_{i,j} = 0`.
-Notice that we delete all self-loops and treat multi-edges as simple edges. The datasets/toy_graph.txt is an example format of the input data.
+Notice that we delete all self-loops and treat multi-edges as simple edges. The `datasets/toy_graph.txt` is an example format of the input data.
 ## Algorithms
 We implement algorithms in our paper in C++. The following files contain the source code of these algorithms:   
 1.`/code/PrivTC/CDPCounting.cpp`: The proposed centralized algorithm for triangle counting with edge-CDP in directed graphs (CDP).   

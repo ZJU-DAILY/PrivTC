@@ -28,4 +28,15 @@ Then run `main`.
 ```
 g++ -o main main.cpp
 ```
-Then run `main`.
+Then run `main`.   
+3.Test the impact of graph size on **CDP** and **LDP**: To generate subgraphs of the input-directed graph, complie all the files in `/code/PriTC_test_graph_size/sampling/` by using:
+```
+g++ -o sampling sampling.cpp
+```
+The run `sampling` to generate subgraphs.      
+Then compile all the files in `/code/PrivTC_test_graph_size/` except the folder `sampling` by using:
+```
+g++ -o main main.cpp
+```
+Then run `main`.   
+4.

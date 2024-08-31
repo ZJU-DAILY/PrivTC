@@ -49,4 +49,5 @@ Then run `main_epsratio`.
 g++ -o main_dmax main_dmax.cpp
 ```
 Then run `main_dmax`.   
-## Requirements
+## Environment
+-GCC 11.2.1

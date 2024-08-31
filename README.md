@@ -17,5 +17,5 @@ We implement algorithms in our paper in C++. The following files contain the sou
 1.`/code/PrivTC/CDPCounting.cpp`: The proposed centralized algorithm for triangle counting with edge-CDP in directed graphs.   
 2.`/code/PrivTC/LDPCounting.cpp`: The proposed local algorithm for triangle counting with edge-LDP in directed graphs.   
 3.`/code/PrivTC_Naive/CDPNaive.cpp`: The strawman solution of triangle counting with edge-CDP in directed graphs.   
-4.`/code/PrivTC_Naive/LDPNaive.cpp`: The strawman solution of triangle counting with edge-LDP in directed graphs.   
+4.`/code/PrivTC_Naive/LDPNaive.cpp`: The strawman solution of triangle counting with edge-LDP in directed graphs.
 ## Usage

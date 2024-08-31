@@ -14,8 +14,18 @@ where `lambda_{i,j} = 1` if there exits an edge from vertex `v_{i}` to `v_{j}`, 
 Notice that we delete all self-loops and treat multi-edges as simple edges. The datasets/toy_graph.txt is an example format of the input data.
 ## Algorithms
 We implement algorithms in our paper in C++. The following files contain the source code of these algorithms:   
-1.`/code/PrivTC/CDPCounting.cpp`: The proposed centralized algorithm for triangle counting with edge-CDP in directed graphs.   
-2.`/code/PrivTC/LDPCounting.cpp`: The proposed local algorithm for triangle counting with edge-LDP in directed graphs.   
-3.`/code/PrivTC_Naive/CDPNaive.cpp`: The strawman solution of triangle counting with edge-CDP in directed graphs.   
-4.`/code/PrivTC_Naive/LDPNaive.cpp`: The strawman solution of triangle counting with edge-LDP in directed graphs.
+1.`/code/PrivTC/CDPCounting.cpp`: The proposed centralized algorithm for triangle counting with edge-CDP in directed graphs (CDP).   
+2.`/code/PrivTC/LDPCounting.cpp`: The proposed local algorithm for triangle counting with edge-LDP in directed graphs (LDP).   
+3.`/code/PrivTC_Naive/CDPNaive.cpp`: The strawman solution of triangle counting with edge-CDP in directed graphs (CDP Naive).   
+4.`/code/PrivTC_Naive/LDPNaive.cpp`: The strawman solution of triangle counting with edge-LDP in directed graphs (LDP Naive).
 ## Usage
+1.**CDP** and **LDP**: Compile all the files in `/code/PrivTC/` by using:
+```
+g++ -o main main.cpp
+```
+Then run `main`.   
+2.**CDP Naive** and **LDP Naive**: Complie all the files in `/code/PrivTC_Naive/` by using:
+```
+g++ -o main main.cpp
+```
+Then run `main`.

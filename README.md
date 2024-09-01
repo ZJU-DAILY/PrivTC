@@ -19,12 +19,12 @@ We implement algorithms in our paper in C++. The following files contain the sou
 3.`/code/PrivTC_Naive/CDPNaive.cpp`: The strawman solution of triangle counting with edge-CDP in directed graphs (CDP Naive).   
 4.`/code/PrivTC_Naive/LDPNaive.cpp`: The strawman solution of triangle counting with edge-LDP in directed graphs (LDP Naive).
 ## Usage
-1.**CDP** and **LDP**: Compile all the files in `/code/PrivTC/` by using:
+1.**CDP** and **LDP** (Test the **impact of privacy budget**): Compile all the files in `/code/PrivTC/` by using:
 ```
 g++ -o main main.cpp
 ```
 Then run `main`.   
-2.**CDP Naive** and **LDP Naive**: Complie all the files in `/code/PrivTC_Naive/` by using:
+2.**CDP Naive** and **LDP Naive** (Test the **impact of privacy budget**): Complie all the files in `/code/PrivTC_Naive/` by using:
 ```
 g++ -o main main.cpp
 ```

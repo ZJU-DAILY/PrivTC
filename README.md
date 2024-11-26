@@ -33,7 +33,7 @@ Then run `main_naive`.
 ```
 g++ -o main_naive main_naive.cpp
 ```
-Then run `main_naive`.
+Then run `main_naive`. 
 4.Test the **impact of graph size** on **CDP** and **LDP**: To generate subgraphs of the input-directed graph, complie all the files in `/code/PriTC_test_graph_size/sampling/` by using:
 ```
 g++ -o sampling sampling.cpp

@@ -16,20 +16,25 @@ Notice that we delete all self-loops and treat multi-edges as simple edges. The 
 We implement algorithms in our paper in C++. The following files contain the source code of these algorithms:   
 1.`/code/PrivTC/CDPCounting.cpp`: The proposed centralized algorithm for triangle counting with edge-CDP in directed graphs (CDP).   
 2.`/code/PrivTC/LDPCounting.cpp`: The proposed local algorithm for triangle counting with edge-LDP in directed graphs (LDP).   
-3.`/code/PrivTC_Naive/CDPNaive.cpp`: The strawman solution of triangle counting with edge-CDP in directed graphs (CDP Naive).   
-4.`/code/PrivTC_Naive/LDPNaive.cpp`: The strawman solution of triangle counting with edge-LDP in directed graphs (LDP Naive).
+3.`/code/PrivTC_Naive/CDPNaive/CDPNaive.cpp`: The strawman solution of triangle counting with edge-CDP in directed graphs (CDP Naive).   
+4.`/code/PrivTC_Naive/LDPNaive/LDPNaive.cpp`: The strawman solution of triangle counting with edge-LDP in directed graphs (LDP Naive).
 ## Usage
 1.**CDP** and **LDP** (Test the **impact of privacy budget**): Compile all the files in `/code/PrivTC/` by using:
 ```
 g++ -o main main.cpp
 ```
 Then run `main`.   
-2.**CDP Naive** and **LDP Naive** (Test the **impact of privacy budget**): Complie all the files in `/code/PrivTC_Naive/` by using:
+2.**CDP Naive** (Test the **impact of privacy budget**): Complie all the files in `/code/PrivTC_Naive/CDPNaive/` by using:
 ```
-g++ -o main main.cpp
+g++ -o main_naive main_naive.cpp
 ```
-Then run `main`.   
-3.Test the **impact of graph size** on **CDP** and **LDP**: To generate subgraphs of the input-directed graph, complie all the files in `/code/PriTC_test_graph_size/sampling/` by using:
+Then run `main_naive`.   
+3.**LDP Naive** (Test the **impact of privacy budget**): Complie all the files in `/code/PrivTC_Naive/LDPNaive/` by using:
+```
+g++ -o main_naive main_naive.cpp
+```
+Then run `main_naive`.
+4.Test the **impact of graph size** on **CDP** and **LDP**: To generate subgraphs of the input-directed graph, complie all the files in `/code/PriTC_test_graph_size/sampling/` by using:
 ```
 g++ -o sampling sampling.cpp
 ```
@@ -39,12 +44,12 @@ Then compile all the files in `/code/PrivTC_test_graph_size/` except the folder 
 g++ -o main_V main_V.cpp
 ```
 Then run `main_V`.   
-4.Test the **impact of privacy budget allocation** on **CDP** and **LDP**: Complie all the files in `/code/PrivTC_test_privacy_budget_allocation` by using:
+5.Test the **impact of privacy budget allocation** on **CDP** and **LDP**: Complie all the files in `/code/PrivTC_test_privacy_budget_allocation` by using:
 ```
 g++ -o main_epsratio main_espratio.cpp
 ```
 Then run `main_epsratio`.   
-5.Test the **impact of projection degree** on **CDP** and **LDP**: Complie all the files in `/code/PrivTC_test_projection_degree` by using:
+6.Test the **impact of projection degree** on **CDP** and **LDP**: Complie all the files in `/code/PrivTC_test_projection_degree` by using:
 ```
 g++ -o main_dmax main_dmax.cpp
 ```
